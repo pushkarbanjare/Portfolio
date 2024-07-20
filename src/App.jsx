@@ -1,18 +1,19 @@
 import React from "react";
 import NavBar from "./components/NavBar";
-import Content from "./components/Content";
-import Icons from "./components/Icons";
-import { BrowserRouter } from "react-router-dom";
+import Home from "./components/Home";
+import Skills from "./components/Skills";
+import Projects from "./components/Projects";
+import Contact from "./components/Contact";
 
 function App() {
   return (
-    <>
-      <BrowserRouter>
+    <div>
         <NavBar />
-        <Content />
-        <Icons />
-      </BrowserRouter>
-    </>
+        <Home />
+        <Skills />
+        <Projects />
+        <Contact />
+    </div>
   );
 }
 
