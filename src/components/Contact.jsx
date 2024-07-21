@@ -14,39 +14,53 @@ const Contact = () => {
       <div className="max-w-screen-xl p-4 mx-auto flex flex-col justify-center w-full h-full">
         <div>
           {/* title */}
-          <h3 className="text-3xl font-bold border-b-2 inline">Contact</h3>
+          <h3 class="text-3xl font-bold inline relative">
+            Contact
+            <span class="absolute inset-x-0 bottom-0 h-1 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500"></span>
+          </h3>
         </div>
-        <div className="flex pt-10">
-          <div className="w-2/5 flex justify-center items-center">
+        <div className="justify-center items-center sm:flex pt-20">
+          <div className="justify-center items-center sm:w-2/5 flex">
             <div>
               {/* icons */}
               <div className=" flex justify-center items-center space-x-7">
-                <a href="https://www.instagram.com/pushkar.banjare/" target="_blank">
+                <a
+                  href="https://www.instagram.com/pushkar.banjare/"
+                  target="_blank"
+                >
                   <FiInstagram className="text-2xl text-pink-400 duration-300 hover:text-3xl" />
                 </a>
                 <a href="https://github.com/pushkarbanjare" target="_blank">
                   <FaGithub className="text-2xl text-slate-100 duration-300 hover:text-3xl" />
                 </a>
-                <a href="https://www.linkedin.com/in/pushkarbanjare/" target="_blank">
+                <a
+                  href="https://www.linkedin.com/in/pushkarbanjare/"
+                  target="_blank"
+                >
                   <FaLinkedinIn className="text-2xl text-blue-400 duration-300 hover:text-3xl" />
                 </a>
                 <a href="https://x.com/pushkarbanjare" target="_blank">
                   <RiTwitterXFill className="text-2xl text-white duration-300 hover:text-3xl" />
                 </a>
-                <a href="https://www.youtube.com/@pushkarbanjare" target="_blank">
+                <a
+                  href="https://www.youtube.com/@pushkarbanjare"
+                  target="_blank"
+                >
                   <FaYoutube className="text-2xl text-red-400 duration-300 hover:text-3xl" />
                 </a>
               </div>
 
               <div className="my-3 flex justify-center items-center">
                 {/* email */}
-                <h5 className="text-slate-300 hover:text-white hover:underline duration-200 text-lg py-3 font-medium">banjarepushkar.2k3@gmail.com</h5>
+                <h5 className="text-slate-300 hover:text-white hover:underline duration-200 text-lg py-3 font-medium">
+                  banjarepushkar.2k3@gmail.com
+                </h5>
               </div>
             </div>
           </div>
-          <div className="w-3/5 flex pt-10 justify-center items-center">
+          <div className="sm:w-3/5 flex pt-10 justify-center items-center">
             {/* form */}
-            <form action="#" className="flex flex-col w-full md:w-1/2">
+            <form action="#" className="flex flex-col w-full sm:w-1/2 md:w-1/2">
               <input
                 type="text"
                 name="name"

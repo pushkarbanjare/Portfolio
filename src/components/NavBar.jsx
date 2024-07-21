@@ -1,7 +1,11 @@
-import React from "react";
+import React, {useState} from "react";
 import { Link } from "react-scroll";
+import { FaBars } from "react-icons/fa6";
+import { FaTimes } from "react-icons/fa";
+{/* <FaTimes /> */}
 
 const NavBar = () => {
+  const [nav, setNav] = useState(false);
   const links = [
     {
       id: 1,
@@ -37,6 +41,29 @@ const NavBar = () => {
           </li>
         ))}
       </ul>
+
+      <div 
+      onClick={() => setNav(!nav)}
+      className="cursor-pointer text-gray-400 z-10 hover:text-white duration-200 md:hidden ">
+        {nav ? <FaTimes size={25}/> : <FaBars size={25}/>}
+      </div>
+
+      {nav && (
+
+      <ul className="flex flex-col justify-center items-center absolute top-20 right-0 bg-gray-800 p-5 rounded-xl">
+      {links.map(({ id, link }) => (
+          <li
+            key={id}
+            className="text-xl cursor-pointer py-1 px-3 capitalize font-medium text-gray-400 hover:text-white via-purple-500 to-pink-500 duration-100"
+          >
+            <Link to={link} smooth duration={600}>
+              {link}
+            </Link>
+          </li>
+        ))}
+      </ul>
+      )}
+
     </div>
   );
 };

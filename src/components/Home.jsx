@@ -7,10 +7,10 @@ const Home = () => {
       name="home"
       className="h-screen w-full bg-gradient-to-b from-black to-gray-950"
     >
-      <div className="max-w-screen-xl mx-auto flex flex-col items-center justify-center h-full px-4 md:flex-row text-white space-x-20">
-        <div className="flex flex-col justify-center h-full py-96">
+      <div className="max-w-screen-xl mx-auto flex flex-col items-center justify-center h-full px-4 sm:flex-row text-white sm:space-x-20">
+        <div className="flex flex-col justify-center h-full sm:py-96">
           <h2 class="text-5xl py-4 font-bold bg-gradient-to-r from-indigo-500 from-10% via-purple-500 via-20% to-pink-500 to-30% bg-clip-text text-transparent">
-            Web Developer
+            Full Stack Developer
           </h2>
 
           <p className="text-lg text-gray-300 max-w-4xl">
@@ -22,7 +22,7 @@ const Home = () => {
           </p>
         </div>
         <div>
-          <img src={profile} alt="Owner" className="h-auto w-80 rounded-full" />
+          <img src={profile} alt="Owner" className="h-auto w-52 sm:w-80 rounded-2xl" />
         </div>
       </div>
     </div>

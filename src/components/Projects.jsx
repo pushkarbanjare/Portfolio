@@ -11,19 +11,22 @@ const Projects = () => {
       <div className="max-w-screen-xl p-4 mx-auto flex flex-col justify-center w-full h-full">
         <div>
           {/* title */}
-          <h3 className="text-3xl font-bold border-b-2 inline">Projects</h3>
+          <h3 class="text-3xl font-bold inline relative">
+            Projects
+            <span class="absolute inset-x-0 bottom-0 h-1 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500"></span>
+          </h3>
         </div>
 
         <div className="max-w-screen-lg py-20 mx-auto flex flex-col w-full">
-          <div className="flex">
-            <div>
+          <div className="sm:flex">
+            <div className="flex items-center justify-center">
               <img
                 src={project1}
                 alt="spendwisely"
-                className="h-auto w-96 rounded-xl border"
+                className="h-auto sm:w-96 w-72 rounded-xl border"
               />
             </div>
-            <div className="px-20 py-4">
+            <div className="px-5 py-10 sm:px-20 sm:py-4">
               <a
                 href="https://spendwiselyy.netlify.app/"
                 className=" flex text-xl font-semibold underline"
